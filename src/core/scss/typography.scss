@@ -1,0 +1,26 @@
+@use "./colors.scss";
+
+/* Text-size styles */
+$heading-l: 3.2rem;
+$heading-m: 2.4rem;
+$body-m: 1.8rem;
+
+h1 {
+  font-size: $heading-l;
+  line-height: 4.3rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: $heading-m;
+  line-height: 3.1rem;
+  font-weight: 700;
+}
+
+p,
+label {
+  font-size: $body-m;
+  line-height: 2.3rem;
+  font-weight: 700;
+  color: colors.$almostWhite;
+}

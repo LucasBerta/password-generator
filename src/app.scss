@@ -1,0 +1,23 @@
+@import "./core/scss/colors.scss";
+@import "./core/scss/mixins.scss";
+
+.app {
+  @include flexCenter;
+  height: 100vh;
+  background-color: $primary;
+  padding: 2rem;
+}
+
+.attribution {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 0.2rem;
+  font-size: 1.2rem;
+  color: $almostWhite;
+
+  a {
+    font-size: 1.2rem;
+    color: $accent;
+  }
+}

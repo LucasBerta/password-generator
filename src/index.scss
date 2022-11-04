@@ -1,0 +1,36 @@
+@import "./core/scss/mixins.scss";
+@import "./core/scss/typography.scss";
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("./assets/fonts/static/JetBrainsMono-BoldItalic.ttf");
+  src: url("./assets/fonts/static/JetBrainsMono-Bold.ttf");
+  src: url("./assets/fonts/JetBrainsMono-Italic-VariableFont_wght.ttf");
+  src: url("./assets/fonts/JetBrainsMono-VariableFont_wght.ttf");
+}
+
+// Reset
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%; /* 1 rem = 10px; 10px/16px = 62.5% */
+  font-family: "JetBrains Mono", sans-serif;
+
+  @include screenMd {
+    font-size: 50%;
+  }
+}
